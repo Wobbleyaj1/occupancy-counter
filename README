@@ -1,5 +1,14 @@
-To actkvate venv: .\venv\Scripts\Activate
-To run person detector: python webcam_person_detector.py --weights yolov5s.pt --view-img
+## Setup Instructions
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/<your-username>/occupancy-counter.git
+   cd occupancy-counter
+   python -m venv venv  # or python3, depending on your setup
+   venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
 
 OCv1: has issues with double counting due to middle line creating 2 unique id's
 OCv2: untested
