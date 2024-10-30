@@ -8,6 +8,9 @@ env/
 .env/
 .venv/
 
+# Ignore data folders
+/data/
+
 # Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
