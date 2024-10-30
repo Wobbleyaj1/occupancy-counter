@@ -16,26 +16,30 @@ OCv2.1: when person exits on one side then another person appears on the other i
 
 1. data_loader.py
    Start Here:
-
 This file lays the groundwork for your project. You need to load and preprocess the TIMo dataset before you can train or detect anything.
-Implement the dataset class to handle loading images and annotations, and set up any necessary transformations. Ensure that your data loader works correctly by testing it with a small batch of images. 2. model.py
-Next:
+Implement the dataset class to handle loading images and annotations, and set up any necessary transformations. Ensure that your data loader works correctly by testing it with a small batch of images. 
 
+2. model.py
+Next:
 Define the architecture of your neural network for person detection. If you plan to use a pre-trained model (like Faster R-CNN or YOLO), you can set that up here as well.
-Implement any functions needed to load pre-trained weights and define the forward pass. Testing your model structure with dummy data at this stage can be beneficial. 3. train.py
-Then:
+Implement any functions needed to load pre-trained weights and define the forward pass. Testing your model structure with dummy data at this stage can be beneficial. 
 
+3. train.py
+Then:
 Set up the training script to train your model. Start by implementing the training loop, loss calculation, and model evaluation on the validation set.
-Ensure that your training process is working well by monitoring loss and other metrics. You can start with a smaller dataset or fewer epochs to speed up testing. 4. detect.py
+Ensure that your training process is working well by monitoring loss and other metrics. You can start with a smaller dataset or fewer epochs to speed up testing. 
+
+4. detect.py
 Next:
-
 Once your model is trained, implement the detection logic. This file will contain the functions to run inference on images or video frames, visualize the results, and post-process the detections.
-Test the detection functionality using images from your dataset to ensure your model is detecting people correctly. 5. tracker.py
+Test the detection functionality using images from your dataset to ensure your model is detecting people correctly. 
+
+5. tracker.py
 Then:
-
 Implement the tracking functionality. After confirming that your detection system works, add tracking to maintain identities across frames.
-Ensure the counting logic is functioning properly, updating occupancy counts based on tracking results. 6. utils.py
-Finally:
+Ensure the counting logic is functioning properly, updating occupancy counts based on tracking results. 
 
+6. utils.py
+Finally:
 As you build the other components, you may find utility functions you want to create or modify. Use this file for any helper functions or common tasks that arise during your development.
 This file can evolve as your project grows, so you can update it to include any functions you find useful.
